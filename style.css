@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(213, 85, 30);
+  background: linear-gradient(
+    180deg,
+    rgba(213, 85, 30, 1) 11%,
+    rgba(237, 208, 234, 1) 46%,
+    rgba(247, 97, 52, 1) 100%
+  );
+}
+
+/******************************* En tête ********************************/
+.banner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: black;
+  color: grey;
+  font-family: "Calligraffitti", cursive;
+  text-align: center;
+}
+
+.banner h1 {
+  color: lightgoldenrodyellow;
+
+  margin-top: 1rem;
+  font-size: calc(2rem + 3vw);
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.links a {
+  color: white;
+  font-size: calc(0.8rem + 1vw);
+}
+
+/************************** Main ***********************************/
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+  color: #fff;
+}
+.main h1 {
+  color: lightgoldenrodyellow;
+}
+.news {
+  padding: 1vw;
+  background: grey;
+}
+
+.news h1 {
+  font-size: calc(2rem + 3vw);
+  text-align: center;
+}
+.news h2 {
+  padding: 1rem;
+  color: #fff;
+}
+
+.imgnews1 {
+  background: url("./image/portrait-g172a76435_1280.jpg") center/cover;
+  width: 100%;
+  height: calc(80vh);
+}
+.imgnews2 {
+  background: url("./image/tom-morbey-r1SwcagHVG0-unsplash.jpg") center/cover;
+  width: 100%;
+  height: calc(100vh);
+}
+
+/************* Imgs Sides on Big screens **************************/
+.card {
+  max-width: 500px;
+  /* height: calc(100vh - 200px ); */
+  height: 100%;
+}
+
+.card1 {
+  background: url("./image/enzo-tommasi-wlxJ4idMTUk-unsplash.jpg") center/cover;
+}
+
+.card2 {
+  background: url("./image/pete-willis-9PGACeJg1i0-unsplash.jpg") center/cover;
+}
+.card3 {
+  background: url("./image/lucas-kohoko-dNvY4ufMAwI-unsplash.jpg") center/cover;
+}
+.card4 {
+  background: url("./image/mountain-g16ae7aefa_1280.jpg") center/cover;
+}
+
+/************************ Shop ***********************/
+.shop {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+}
+
+.shoppingCard {
+  border: 2px solid grey;
+  box-shadow: 10px 5px 10px gray;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+  width: 300px;
+}
+.shop img {
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+}
+/************************* line animation **********************/
+.line {
+  margin: 20px auto;
+  border-radius: 25px;
+  width: 80vw;
+  height: 4px;
+  background: #333;
+
+  animation: line 30s infinite ease-out;
+}
+
+@keyframes line {
+  0% {
+    transform: scaleX(0);
+  }
+
+  50% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+/*************************** advise ************************************/
+.imgAdvise {
+  background: url(./image/ayo-ogunseinde-sibVwORYqs0-unsplash.jpg) center/cover;
+  padding-left: 50%;
+  max-width: 200px;
+  height: 200px;
+}
+
+.advises {
+  margin: 2rem;
+  border: 3px solid black;
+  padding: 3vw;
+}
+
+.adviseWrapper {
+  display: grid;
+  gap: 2vw;
+  grid-template-columns: 1fr 3fr;
+}
+
+.adviseConclusion {
+  margin: 2vw;
+}
+
+.adviseConclusion p {
+  border: 1px 2px 0px solid black;
+  box-shadow: 10px 5px 10px gray;
+  border-radius: 12px;
+  padding: 1vw;
+}
+
+/******************************** Article ********************************/
+
+.articleWrapper {
+  position: relative;
+  width: 70vw;
+  margin: 0 auto;
+  border: 3px 2px 3px solid black;
+  box-shadow: 10px 10px 10px 5px gray;
+  border-radius: 12px;
+  padding: 1vw;
+  background: #fff;
+  font-size: 1.2rem;
+}
+
+.partOneArticle {
+  margin: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1vw;
+  font-size: calc(1rem + 1vw);
+}
+.partTwoArticle {
+  margin: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1vw;
+  font-size: calc(1rem + 1vw);
+}
+
+.imgArticle1 {
+  background: url("./image/gunk.jpg") center/cover;
+  width: 200px;
+  height: 200px;
+}
+.imgArticle2 {
+  background: url("./image/skate3.jpg") center/cover;
+  width: 200px;
+  height: 200px;
+}
+
+.ratingWrapper {
+  margin: 2vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.ratingWrapper span {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  position: relative;
+}
+.ratingLineBack {
+  border-radius: 25px;
+  height: 5px;
+  background: lightgreen;
+  width: 15vw;
+}
+.ratingLine {
+  border-radius: 25px;
+  height: 5px;
+  background: #333;
+  animation: rating 8s infinite ease-out;
+
+  transform-origin: left;
+}
+
+@keyframes rating {
+  0% {
+    transform: scaleX(0);
+  }
+
+  30% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.ratingLine1 {
+  width: 14vw;
+}
+.ratingLine2 {
+  width: 12vw;
+}
+.ratingLine3 {
+  width: 10vw;
+}
+.ratingLine4 {
+  width: 14vw;
+}
+.ratingLine5 {
+  width: 13vw;
+}
+
+/******************************** Guest *********************************/
+.mainGuest {
+  margin-top: 2rem;
+  background: gray;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 1rem;
+}
+.guest {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  gap: 1vw;
+  padding: 2rem;
+
+  color: #fff;
+}
+.guest h2 {
+  font-size: 2.5rem;
+}
+.guest h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.guestDescription {
+  display: flex;
+}
+
+.imgGuest {
+  background: url("./image/mister_tucks-skateboard.png") center/contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+footer {
+  width: 99vw;
+  height: 100px;
+  position: relative;
+  background: gray;
+  margin-top: 1rem;
+  border-top: 1px solid black;
+}
+
+/************************* Footer *************************************/
+footer p {
+  font-size: 1.3rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skatefooter {
+  margin-top: 1rem;
+  background: url("./image/NicePng_skateboarder-png_2294260.png") left/contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 80px;
+  animation: guy 12s infinite linear;
+  position: absolute;
+  left: 0rem;
+  overflow-x: hidden;
+}
+.grafittifooter {
+  margin-top: 1rem;
+  background: url("./image/NicePng_graffiti-png_184508.png") left/contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 100px;
+  animation: graff 5s infinite linear;
+  position: absolute;
+  right: 1.2rem;
+}
+
+@keyframes guy {
+  0% {
+    left: 5vw;
+  }
+  25% {
+    transform: rotate(1turn);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    left: 92vw;
+  }
+}
+@keyframes graff {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*********************** mediaQueries *******************************/
+
+@media screen and (max-width: 1250px) {
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    display: none;
+  }
+
+  .main,
+  .mainGuest {
+    display: block;
+  }
+
+  .shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
